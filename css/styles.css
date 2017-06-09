@@ -1,0 +1,18 @@
+#output {
+  display: none;
+}
+img {
+  max-width: 300px;
+  max-height: 100px;
+}
+.container {
+  background-color: #eee;
+}
+#prompt {
+  font-size: 20px;
+  font: Verdana;
+}
+.btn {
+  background-color: violet;
+  font: Verdana;
+}
