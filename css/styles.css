@@ -1,3 +1,10 @@
+#body {
+background: #FFF url(https://images.fineartamerica.com/images-medium-large/empty-white-sand-tropical-beach-axiom-photographic.jpg) no-repeat center fixed;
+background-size: cover;
+margin: 0;
+border: 0;
+padding: 0;
+}
 #output {
   display: none;
 }
@@ -7,6 +14,9 @@ img {
 }
 .container {
   background-color: #eee;
+  padding: 50px;
+  opacity: .8;
+  align-items: center;
 }
 #prompt {
   font-size: 20px;
@@ -15,4 +25,12 @@ img {
 .btn {
   background-color: violet;
   font: Verdana;
+}
+.flower {
+  border-radius: 60px;
+}
+.text {
+  font: Verdana;
+  font-weight: bold;
+  font-size: 16px;
 }

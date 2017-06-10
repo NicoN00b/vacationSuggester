@@ -1,109 +1,110 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
     <title>Take a Vacation!</title>
   </head>
-  <body>
+  <body id="body">
     <div class="container">
       <h1>You Look Like You Need a Break.</h1>
-      <p id="prompt">Vacations are proven to be beneficial to our health, both mentally and physically, but our culture often equates giving oneself free time to laziness.  This is of course false! Vacations are proven to make you a better worker and get you out of your ruts personally and professionally.  Show if I've convinced you that you need a vacation, but you're not sure where to go, take this short quiz to match yourself to an incredible destination.</p>
-      <form id="vacay">
+      <p id="prompt">Vacations are proven to be beneficial to our health, both mentally and physically, but our culture often equates giving oneself free time to laziness.  This is of course false! Vacations are proven to make you a better worker and get you out of your ruts personally and professionally.  So, if I've convinced you that you need a vacation, but you're not sure where to go, take this short quiz to match yourself to an incredible destination.</p>
+      <form id="vacay" onsubmit="addNumbers()">
         <h2>What's the best meal?</h2>
         <div class="radio">
-          <label class="input1">
+          <label>
             <input type="radio" name="operator1" value="3">
             <img src="http://www.chinatourguide.com/china_photos/hongkong/dining/Hongkong_Dim_Sam_e.jpg" alt="some delicious dim sum.">
           </label>
         </div>
         <br>
         <div class="radio">
-          <label class="input1">
+          <label>
             <input type="radio" name="operator1" value="2">
             <img src="http://www.privatetoursinistanbul.com/ttg/gallery/private438foto52652234.jpg" alt="a classy turkish meal.">
           </label>
         </div>
         <br>
         <div class="radio">
-          <label class="input1">
+          <label>
             <input type="radio" name="operator1" value="1">
             <img src="http://agringoinmexico.com/wp-content/uploads/2015/10/mexico-city-street-food-casual-dining-620x264.jpg" alt="the street food of D.F.">
           </label>
         </div>
         <br>
-        <h2>Dry or Humid?</h2>
+        <h2>Humid or Dry?</h2>
         <div class="radio">
-          <label class="input2">
+          <label =class="text">
             <input type="radio" name="operator2" value="2">
             Humid
           </label>
         </div>
         <div class="radio">
-          <label class="input2">
+          <label =class="text">
             <input type="radio" name="operator2" value="1">
             Dry
           </label>
         </div>
         <h2>How do you like to get around?</h2>
         <div class="radio">
-          <label class="input3">
+          <label =class="text">
             <input type="radio" name="operator3" value="2">
             Boat
           </label>
         </div>
         <div class="radio">
-          <label class="input3">
+          <label =class="text">
             <input type="radio" name="operator3" value="1">
             Train
           </label>
         </div>
         <h2>Pick a Flower</h2>
         <div class="radio">
-          <label class="input3">
+          <label>
             <input type="radio" name="operator4" value="3">
-            Busybee
+            <img src="http://4.bp.blogspot.com/-cAlbD91vBpw/VMT0LO7E5tI/AAAAAAAAIQk/S-KkD17dlpE/s1600/IMG_5878.JPG" class="flower" alt="A beautiful orchid.">
           </label>
         </div>
         <div class="radio">
-          <label class="input3">
+          <label>
             <input type="radio" name="operator4" value="2">
-            Dentabone
+            <img src="https://www.theistanbulinsider.com/wp-content/uploads/2010/04/tulips-emirgan-park-istanbul-01.jpg" class="flower" alt="A bed of tulips">
           </label>
         </div>
         <div class="radio">
-          <label class="input3">
+          <label>
             <input type="radio" name="operator4" value="1">
-            Raw Meat
+            <img src="https://assets-production-webvanta-com.s3-us-west-2.amazonaws.com/000000/51/74/slider_detail/uploads/plant/1450969638-722edff85cddc1999/25297970_m.jpg" class="flower" alt="A Dahlia">
           </label>
         </div>
-        <h2>If you were a chew toy, which chew toy would you be?</h2>
+        <h2>Pick your Spirit Animal</h2>
         <div class="radio">
-          <label class="input3">
+          <label>
             <input type="radio" name="operator5" value="3">
-            Busybee
+            <img src="https://static.turbosquid.com/Preview/2015/07/11__10_22_08/01.jpge7a67695-3eee-4e59-9743-ddb74eb84badOriginal.jpg" class="flower" alt="A Gold Chinese Dragon">
           </label>
         </div>
         <div class="radio">
-          <label class="input3">
+          <label>
             <input type="radio" name="operator5" value="2">
-            Dentabone
+            <img src="https://thefivebeasts.files.wordpress.com/2015/01/picture-grey-wolf.jpg" class="flower" alt="A growling Grey Wolf.">
           </label>
         </div>
         <div class="radio">
-          <label class="input3">
+          <label>
             <input type="radio" name="operator5" value="1">
-            Raw Meat
+            <img src="http://cdn.pcwallart.com/images/jaguar-animal-roar-wallpaper-1.jpg" class="flower" alt="A snarling Jaguar">
           </label>
         </div>
       </form>
       <br>
-      <button type="submit" class="btn">Take Me Somewhere Nice</button>
+      <button type="submit" class="btn">Take Me Somewhere Nice!</button>
+      <br>
       <div id="output">
-
+        <p><span id="df">Mexico City is an incredible center or arts, culture, and history!</span><span id="istanbul">Istanbul is a breaktaking city</span><span id="HK">Hong Kong is the most efficient place on earth</span></p>
       </div>
     </div>
   </body>
