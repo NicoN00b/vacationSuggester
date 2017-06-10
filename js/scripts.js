@@ -1,32 +1,25 @@
-var addNumbers = function(a, b, c, d, e) {
-  var numericResult = a + b + c + d + e;
-  return numericResult;
-};
-
-
-if (addNumbers() < 7) {
-  document.getElementById("#df").alert;
-} else if ((addNumbers() > 6)&&(addNumbers() < 11)) {
-  document.getElementById("#istanbul").alert;
-} else if (addNumbers() > 10) {
-  document.getElementById("#HK").alert;
-}
-
-
 
 $(document).ready(function() {
-  $("form#vacay").submit(function() {
+  $("#submit").click(function() {
+    event.preventDefault();
+    var foodInput = parseInt($("input:radio[name=q1]:checked").val());
+    var weatherInput = parseInt($("input:radio[name=q2]:checked").val());
+    var transportInput = parseInt($("input:radio[name=q3]:checked").val());
+    var flowerInput = parseInt($("input:radio[name=q4]:checked").val());
+    var animalInput = parseInt($("input:radio[name=q5]:checked").val());
+    var totalInput = (foodInput + weatherInput + transportInput + flowerInput + animalInput);
 
-    var operator1 = parseInt("input:radio[name=operator1]:checked").val();
-    var operator2 = parseInt("input:radio[name=operator2]:checked").val();
-    var operator3 = parseInt("input:radio[name=operator3]:checked").val();
-    var operator4 = parseInt("input:radio[name=operator4]:checked").val();
-    var operator5 = parseInt("input:radio[name=operator5]:checked").val();
+    $('.df').hide();
+    $('.istanbul').hide();
+    $('.HK').hide();
 
-    addNumbers(operator1, operator2, operator3, operator4, operator5);
-
-
-    $("#output").show(result);
+    if((totalInput >= 1 && totalInput <= 40)) {
+      $('.df').show();
+    } else if ((totalInput >= 45 && totalInput <= 55)) {
+      $('.istanbul').show();
+    } else if ((totalInput >= 60 && totalInput <= 75 )) {
+      $('.HK').show();
+    }  else (alert("Please completely fill out survey!"));
 
   });
 });

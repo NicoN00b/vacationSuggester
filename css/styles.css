@@ -1,3 +1,6 @@
+.df, .istanbul, .HK {
+  display: none;
+}
 #body {
 background: #FFF url(https://images.fineartamerica.com/images-medium-large/empty-white-sand-tropical-beach-axiom-photographic.jpg) no-repeat center fixed;
 background-size: cover;
@@ -5,10 +8,7 @@ margin: 0;
 border: 0;
 padding: 0;
 }
-#output {
-  display: none;
-}
-img {
+.meals {
   max-width: 300px;
   max-height: 100px;
 }
@@ -28,9 +28,18 @@ img {
 }
 .flower {
   border-radius: 60px;
+  max-width: 300px;
+  max-height: 100px;
 }
 .text {
   font: Verdana;
   font-weight: bold;
   font-size: 16px;
+}
+.answers {
+  opacity: none;
+}
+.destination{
+  max-height: 300px;
+  max-width: 900px;
 }
